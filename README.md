@@ -11,3 +11,6 @@ Installation Instructions:
   3.  make && make install
   
   This will build a shared object library named libdedisp.so which is a prerequisite for Heimdall. The dedisp header files will be installed into INSTALL_DIR/include and the library into INSTALL_DIR/lib.
+  
+  This fork just adds the mkdir commands to the makefile, since the original make fails if the directory does not already exist.
+  If trying to use this library with any other astronomy tool, for example, heimdall-astro, add the /lib/ subdirectory of the installation path to LD_LIBRARY_PATH. 
